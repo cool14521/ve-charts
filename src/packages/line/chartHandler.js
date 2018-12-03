@@ -84,6 +84,7 @@ function getLineSeries(args) {
     showSymbol = true,
     smooth = false,
     stack = null,
+    secondMeaAxis = null,
     step = null,
     symbol = 'emptyCircle',
     symbolSize = 4,
@@ -111,6 +112,7 @@ function getLineSeries(args) {
       step,
       symbol,
       symbolSize,
+      yAxisIndex: secondMeaAxis === name ? '1' : '0',
       ...others
     })
   })
